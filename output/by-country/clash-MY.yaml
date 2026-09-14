@@ -19,17 +19,17 @@ proxies:
       Host: 38.60.168.98
 - name: 🇲🇾 MY 02 - xiaohe
   type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  server: www.glassdoor.com
+  port: 8880
+  uuid: 3bf2781f-63a2-4c38-ad02-2cc337c2f7fa
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /db55c40bbc75
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: 38.60.168.98
+      Host: silent-heart-175f.325-a85.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
