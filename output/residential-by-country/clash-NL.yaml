@@ -15,7 +15,7 @@ proxies:
   servername: rAyAn-007.mAxImA.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
       Host: rAyAn-007.mAxImA.DpDnS.OrG
 proxy-groups:
