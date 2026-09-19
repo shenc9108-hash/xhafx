@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 195.85.23.45
+  server: 195.85.23.75
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,21 +20,35 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - xiaohe
   type: vless
-  server: 195.85.23.252
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  server: 132.243.203.207
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: cdn8848.776676.xyz
 - name: 🇨🇿 CZ 03 - xiaohe
   type: vless
-  server: 195.85.23.111
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇨🇿 CZ 04 - xiaohe
+  type: vless
+  server: 195.85.23.45
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -54,6 +68,7 @@ proxy-groups:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +77,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - xiaohe
   - 🇨🇿 CZ 02 - xiaohe
   - 🇨🇿 CZ 03 - xiaohe
+  - 🇨🇿 CZ 04 - xiaohe
 rules:
 - MATCH,PROXIES
